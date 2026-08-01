@@ -48,6 +48,7 @@ Try running the following commands:
    dbt test //ไม่จำเป็น
    python export_data.py //ส่งออกข้อมูลชุดใหม่สำหรับ Power BI
 ### 📊 ขั้นตอนที่ 4: อัปเดตการแสดงผลบน Power BI
+- Link [Dashborad](https://app.powerbi.com/view?r=eyJrIjoiM2Q0NGIwMDQtZjQxNy00MDFiLTljYTQtNGUxZmRhOTFiYmE3IiwidCI6IjhlNjM0ZTY3LTlkNjYtNDZkMi1hNTI5LWUxYjcwOGM1ZDhiYyIsImMiOjEwfQ%3D%3D)
 ### 📚 dbt Project Starter Resources
 - Learn more about dbt in the docs
 - Check out Discourse for commonly asked questions and answers

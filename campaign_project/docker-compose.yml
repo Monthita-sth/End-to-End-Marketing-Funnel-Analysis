@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  postgres_dw:
+    image: postgres:13
+    container_name: campaign_data_warehouse
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: password123
+      POSTGRES_DB: nykaa_dw
+    ports:
+      - "5432:5432" # ระวังเรื่อง Port Collision ถ้าในเครื่องมี Service อื่นรันพอร์ตนี้อยู่ ให้เปลี่ยนเลขหน้าเป็นพอร์ตอื่น
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:

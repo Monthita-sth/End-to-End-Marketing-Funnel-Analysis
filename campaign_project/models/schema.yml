@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: fact_campaign_performance
+    description: "ตารางสรุปประสิทธิภาพแคมเปญ พร้อม Metric ที่คำนวณใหม่"
+    columns:
+      - name: Campaign_ID
+        tests:
+          - unique
+          - not_null
+
+      - name: Campaign_Type
+        tests:
+          # ใช้คอนเซปต์ EP: เช็คว่ากลุ่มข้อมูลถูกต้องตรงตามที่ระบบรับได้เท่านั้น
+          - accepted_values:
+              values: ['Social Media', 'Paid Ads', 'Influencer', 'Email', 'SEO']

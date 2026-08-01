@@ -1,0 +1,16 @@
+# Python Virtual Environment
+venv/
+__pycache__/
+
+# dbt generated files
+target/
+dbt_packages/
+logs/
+
+# Database files (ให้ระบบไปสร้างใหม่เองตอนรันโค้ด)
+*.db
+*.sqlite
+
+# Optional: ถ้าไฟล์ Excel หรือ Power BI ใหญ่เกิน 100MB ให้ใส่ด้วย
+# *.xlsx
+# *.pbix

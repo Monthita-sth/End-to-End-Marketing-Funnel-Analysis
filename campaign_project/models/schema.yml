@@ -14,3 +14,10 @@ models:
           # ใช้คอนเซปต์ EP: เช็คว่ากลุ่มข้อมูลถูกต้องตรงตามที่ระบบรับได้เท่านั้น
           - accepted_values:
               values: ['Social Media', 'Paid Ads', 'Influencer', 'Email', 'SEO']
+              
+      - name: Acquisition_Cost
+        tests:
+          - dbt_utils.expression_is_true:
+              expression: ">= 0"
+              config:
+                severity: warn  # ระบบจะแค่เตือนสีเหลือง แต่ไม่พัง

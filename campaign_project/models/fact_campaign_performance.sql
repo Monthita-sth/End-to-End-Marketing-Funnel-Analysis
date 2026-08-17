@@ -8,7 +8,8 @@ WITH raw_data AS (
         Clicks,
         Conversions,
         Revenue,
-        Acquisition_Cost,
+        -- 🛠️ Data Cleansing: แทรก ABS() ตรงนี้ เพื่อเปลี่ยนลบเป็นบวกตั้งแต่แรก
+        ABS(Acquisition_Cost) AS Acquisition_Cost,
         ROI
     FROM raw_campaign_data
 ),

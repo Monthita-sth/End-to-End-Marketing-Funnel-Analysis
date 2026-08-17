@@ -1,7 +1,6 @@
 version: '3.8'
 services:
   postgres_dw:
-    image: postgres:13
     container_name: campaign_data_warehouse
     environment:
       POSTGRES_USER: admin
